@@ -1,0 +1,337 @@
+*{
+  font-family:'Times New Roman', Times, serif;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color:#000000;
+    border-radius: 10px;
+    overflow:auto;
+}
+
+header{
+    padding: 0px 60px;
+}
+
+.navbar{
+    height:60px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+.name{
+    height: 100%;
+    color:white;
+    font-size: 25px;
+    font-weight: 500;  
+    font-family: "Poppins", sans-serif;            
+}
+
+.btn{
+    color:#fffffff7;
+    font-weight: 500;  
+    border-radius: 35px;
+    box-shadow:0px 2px 20px orange;
+    margin-left: 20px;
+    padding-right: 15px;
+}
+
+.btn:hover{
+    border: 2px solid black;
+}
+
+.items{
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content:end;
+    flex: 10 1;  
+    padding:0 10px;
+}
+
+.items a{
+    color: white;
+    font-size:20px;
+    text-decoration:none;
+    padding-right: 30px;
+}
+@media (width < 1000px){
+    .btn{
+        display: none;
+    }   
+}
+.personal_info{
+    display: flex;
+    flex: 1;
+}
+
+.info{
+    height:100%;
+    width: 50%;
+    margin: 80px 0;
+}
+h1{
+    font-size:60px;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    margin: 15px 0 15px 0;
+}
+
+.fullname{
+    color:darkorange;
+}
+
+p{
+    font-size: 16px;
+    font-weight:50;
+    margin: 25px 0 25px 0;
+    opacity: 0.5;
+}
+
+.icons{
+    margin: 60px 0 0 15px;
+    color:darkorange;
+    display:flex;
+    font-size: 40px;
+}
+.icons i{
+    padding-left: 25px;
+}
+.picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0 10px 100px;
+}
+.picture img{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius:100%;    
+}
+
+.box{
+    background-color: white;
+    color: #000;
+    height: 60px;
+    width: 150px;
+    text-align: center;
+    padding-top:15px;
+    border-radius: 15px;
+    position: relative;
+    bottom: 40px;
+    animation-name: box_slider;
+    animation-duration:  1s;
+    animation-timing-function:  ease-in;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes box_slider{
+    from{
+        right: 0px;
+    }
+    to{
+        right: 80px;
+    }
+}
+
+main{
+    padding: 0px 60px;
+}
+
+.skill{
+    width: 100%;
+    height: 600px;
+    margin: 100px 60px 200px 60px;
+    display: flex;
+
+}
+.services{
+    height: 550px;
+    width: 450px;
+}
+
+.services .btn{
+    margin-top: 25px;
+}
+
+.cards{
+    display: flex;
+    flex:2;
+    gap: 20px;
+}
+
+.card{
+    height: 250px;
+    width: 190px;
+    background-color: white;
+}
+
+.card img{
+    height: 75px;
+    width: 65px;
+    margin: 20px auto;
+}
+
+.one{
+    position:relative;
+    top: 250px;
+    right: 400px; /*200px*/
+    animation-name:card_slider1;
+    animation-duration:  1s;
+    animation-timing-function:  ease-in;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+.two{
+    position: relative;
+     left:400px;/*100px */
+    animation-name:card_slider2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+.three{
+    position: relative;
+    top: 350px;
+    right: 50px; /*200px*/
+    animation-name:card_slider3;
+    animation-duration:  1s;
+    animation-timing-function:  ease-in;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes card_slider1 {
+    from{
+        right:400px;
+    }
+    to{
+        right: 0px;
+    }
+}
+@keyframes card_slider2 {
+    from{
+        left: 400px;
+    }
+    to{
+        left: 100px;
+    }
+}
+@keyframes card_slider3 {
+    from{
+        right: 0px;
+    }
+    to{
+        right: 150px;
+    }
+}
+.project {
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+}
+.logo1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+}
+.ProName{
+    font-size: 25px;
+    color:burlywood;
+    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 10px;
+}
+.cameraimg{
+    height: 150px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.logo2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+}
+
+.logo3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+#contact{
+    display: flex;
+    height: 300px;
+    margin-bottom: 50px;
+   
+}
+.heading{
+    width: 25%;
+}
+.heading h2{
+    font-family:'Times New Roman', Times, serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 200px;
+}
+
+input{
+    width: 400px;
+    height: 45px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+}
+textarea{
+    border: 2px solid yellow;
+    border-radius: 10px;
+}
+
+.send_btn{
+    width:80px;
+    border-radius: 35px;
+    box-shadow: 0px 2px 20px orange;
+    background-color: orange;
+    margin: 0 auto;
+}
+
+ footer .half{   
+    height: 300px;
+    width: 100%;
+    background-color: orange;
+}
+
+.half p{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 1;
+    padding-top: 50px;
+}
+.half .icon{
+   margin-left: 700px;
+}
+
+.half .icon i{
+    padding-right: 30px;
+    font-size: 35px;
+}
